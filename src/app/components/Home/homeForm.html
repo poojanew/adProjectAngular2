@@ -1,0 +1,544 @@
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand" style="margin-left: 10px; font-size: 30px; color: #ec7490 ">Shoplet</a>
+        </div>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#category">Category</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+
+            <form class="navbar-form navbar-left">
+                <div class="input-group" style="margin-left: 50px">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 10px">
+                <li><button onclick="routePostAd()" id="postad" class="btn btn-primary" data-target="#"
+                        style="margin-top: 8px; margin-right: 5px">Post Ad</button></li>
+                <li><button class="btn btn-primary" data-toggle="modal" data-target="#login" style="margin-top: 8px">Sign In/Up</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="tab-content">
+        <div id="category" class="tab-pane fade in active" style="background-color: white">
+            <ul id="uldiv2">
+                <li class="dropdown1 lidiv3">
+                    <a href="javascript:void(0)" class="dropbtn1"><b>Transportation</b></a>
+                    <div class="dropdown-content1">
+                        <table>
+                            <tr>
+                                <td class="tdhover">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/caricon.png" height="100px" width="100px" />
+                                            <figcaption style="text-align: center;">Cars</figcaption>
+                                        </figure>
+                                    </a>
+                                </td>
+                                <td class="tdhover">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/comveh.png" height="100px" width="100px" />
+                                            <figcaption style="text-align: center;">Commercial-Vehicle</figcaption>
+                                        </figure>
+                                    </a>
+                                </td>
+                                <td class="tdhover">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/motorcycleicon.jpg" height="100px" width="100px" />
+                                            <figcaption style="text-align: center;"> MotorCycle</figcaption>
+                                        </figure>
+                                    </a>
+                                </td>
+                                <td class="tdhover">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/scootericon.png" height="100px" width="100px" />
+                                            <figcaption style="text-align: center;"> Scooter</figcaption>
+                                        </figure>
+                                    </a>
+                                </td>
+                                <td class="tdhover">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/bicycleicon.png" height="100px" width="100px" />
+                                            <figcaption style="text-align: center;"> BiCycle</figcaption>
+                                        </figure>
+                                    </a>
+                                </td>
+                                <td class="tdhover">
+                                    <a href="#">
+                                        <figure>
+                                            <img src="images/bikespareicon.png" height="100px" width="100px" />
+                                            <figcaption style="text-align: center;"> Spare-Parts</figcaption>
+                                        </figure>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <li class="dropdown1 lidiv3">
+                        <a href="javascript:void(0)" class="dropbtn1"><b>Real Estate</b></a>
+                        <div class="dropdown-content1">
+                            <table>
+                                <tr>
+                                    <td class="tdhover">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="images/homesale.jpg" height="100px" width="100px" />
+                                                <figcaption style="text-align: center;">For Sale</figcaption>
+                                            </figure>
+                                        </a>
+                                    </td>
+
+                                    <td class="tdhover">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="images/homerent.png" height="100px" width="100px" />
+                                                <figcaption style="text-align: center;">Rent</figcaption>
+                                            </figure>
+                                        </a>
+                                    </td>
+                            </table>
+                        </div>
+                        <li class="dropdown1 lidiv3">
+                            <a href="javascript:void(0)" class="dropbtn1"><b>Mobile</b></a>
+                            <div class="dropdown-content1">
+                                <table>
+                                    <tr>
+                                        <td class="tdhover">
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="images/mobileicon.jpg" height="100px" width="100px" />
+                                                    <figcaption style="text-align: center;">Mobile Phones</figcaption>
+                                                </figure>
+                                            </a>
+                                        </td>
+
+                                        <td class="tdhover">
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="images/tabicon.png" height="100px" width="100px" />
+                                                    <figcaption style="text-align: center;">Tablets</figcaption>
+                                                </figure>
+                                            </a>
+                                        </td>
+                                        <td class="tdhover">
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="images/mobileaccicon.jpg" height="100px" width="100px" />
+                                                    <figcaption style="text-align: center;"> Accessories</figcaption>
+                                                </figure>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <li class="dropdown1 lidiv3">
+                                <a href="javascript:void(0)" class="dropbtn1"><b>Electronic Appliances</b></a>
+                                <div class="dropdown-content1">
+
+                                    <table>
+                                        <tr>
+                                            <td class="tdhover">
+                                                <a href="#">
+                                                    <figure>
+                                                        <img src="images/computericon.png" height="100px" width="100px" />
+                                                        <figcaption style="text-align: center;">Computer&Laptop</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </td>
+
+                                            <td class="tdhover">
+                                                <a href="#">
+                                                    <figure>
+                                                        <img src="images/tvicon.png" height="100px" width="100px" />
+                                                        <figcaption style="text-align: center;">TV Video-Audio</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </td>
+                                            <td class="tdhover">
+                                                <a href="#">
+                                                    <figure>
+                                                        <img src="images/printericon.jpg" height="100px" width="100px" />
+                                                        <figcaption style="text-align: center;">Printer&Monitor</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </td>
+                                            <td class="tdhover">
+                                                <a href="#">
+                                                    <figure>
+                                                        <img src="images/acicon.jpeg" height="100px" width="100px" />
+                                                        <figcaption style="text-align: center;"> ACs</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </td>
+                                            <td class="tdhover">
+                                                <a href="#">
+                                                    <figure>
+                                                        <img src="images/fridgeicon.png" height="100px" width="100px" />
+                                                        <figcaption style="text-align: center;"> Fridge</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </td>
+                                            <td class="tdhover">
+                                                <a href="#">
+                                                    <figure>
+                                                        <img src="images/washingmachine.jpg" height="100px" width="100px" />
+                                                        <figcaption style="text-align: center;">WashingMachine</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <li class="dropdown1 lidiv3">
+                                    <a href="javascript:void(0)" class="dropbtn1"><b>Furniture</b></a>
+                                    <div class="dropdown-content1">
+                                        <table>
+                                            <tr>
+                                                <td class="tdhover">
+                                                    <a href="#">
+                                                        <figure>
+                                                            <img src="images/sofaicon.png" height="100px" width="100px" />
+                                                            <figcaption style="text-align: center;">Sofa & Dining</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </td>
+
+                                                <td class="tdhover">
+                                                    <a href="#">
+                                                        <figure>
+                                                            <img src="images/bed.jpg" height="100px" width="100px" />
+                                                            <figcaption style="text-align: center;">Beds & Wardrobes</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </td>
+                                                <td class="tdhover">
+                                                    <a href="#">
+                                                        <figure>
+                                                            <img src="images/homedecoricon.jpg" height="100px" width="100px" />
+                                                            <figcaption style="text-align: center;">Home Decor</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </td>
+                                                <td class="tdhover">
+                                                    <a href="#">
+                                                        <figure>
+                                                            <img src="images/kidsicon.jpg" height="100px" width="100px" />
+                                                            <figcaption style="text-align: center;"> Kids Furniture</figcaption>
+                                                        </figure>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+            </ul>
+        </div>
+    </div>
+
+    
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="intro">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+
+                            <div class="img-wrapper">
+                                <img src="images/div3sofa.jpg" alt="First Slide" width="100%" style="padding: 20px">
+
+                                <div class="img-overlay" style="padding-bottom: 40px">
+                                    <h1 style="color: #ffac10">Upto 40% off on Furniture</h1>
+                                    <a href="#"><button class="btn btn-md btn-primary" style="font-size: 25px">Check-out</button></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <img src="images/div3e-waste.jpg" alt="Second Slide" width="100%" style="padding: 20px">
+                        </div>
+                        <div class="item">
+                            <img src="images/div3donate.jpg" alt="Third Slide" width="100%" style="padding: 20px">
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="section">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Filter <span class="glyphicon glyphicon-filter"></span></div>
+                    <div class="panel-body">
+                        <!-- Price Range -->
+                        <hr>
+                        <h6> Price Range</h6>
+                        <input type="range" id="price-range" value="1000">
+                        <hr>
+
+                        <!-- Filter for city -->
+
+                        <h6>City</h6>
+                        <div class="input-group">
+                            <input list="city" name="city" type="text" class="form-control" placeholder="City">
+                            <datalist id="city">
+                                <option value="Mumbai">
+                                    <option value="Nagpur">
+                                        <option value="Pune">
+                                            <option value="Thane">
+                                                <option value="Nashik">
+                                                    <option value="Aurangabad">
+                                                        <option value="Solapur">
+                                                            <option value="Thane">
+                                                                <option value="Palghar">
+                                                                    <option value="Thane">
+                                                                        <option value="Kolhapur">
+                                                                            <option value="Akola">
+                                                                                <option value="Raigad">
+                            </datalist>
+                            <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="section bg-alt">
+                <div class="row" style="padding-top: 30px">
+
+                    <div class="col-md-4">
+                        <div class="demo-content">
+                            <div class="gallery">
+                                <div class="well">
+                                    <img src="images/sofa.jpg" alt="sofa" width="300" height="200">
+                                </div>
+
+                                <div class="desc">
+                                    <p style="font-size: 20px;"><b>Three Seater Sofa</b></p>
+                                    <p style="font-size: 20px;color: red;">Rs.4500</p>
+                                    <a href="#">Heet Palod </a><small>14<sup>th</sup> July 2017</small><br><br>
+                                    <button onclick="document.location.href='addescription.html'" type="button" class="btn btn-info btn-sm" style="margin-bottom: 20px">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="demo-content bg-alt">
+                            <div class="gallery">
+                                <div class="well">
+                                    <img src="images/bed.jpg" alt="bed" width="300" height="200">
+                                </div>
+
+                                <div class="desc">
+                                    <p style="font-size: 20px;"><b>Queen Size Bed</b></p>
+                                    <p style="font-size: 20px;color: red;">Rs.8800</p>
+                                    <a href="#">Anjali </a><small>11<sup>th</sup> January 2017</small>
+                                    <br><br>
+                                    <button onclick="document.location.href='addescription.html'" type="button" class="btn btn-info btn-sm" style="margin-bottom: 20px">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="demo-content bg-alt">
+                            <div class="gallery">
+                                <div class="well">
+                                    <img src="images/bed.jpg" alt="bed" width="300" height="200">
+                                </div>
+
+                                <div class="desc">
+                                    <p style="font-size: 20px;"><b>Queen Size Bed</b></p>
+                                    <p style="font-size: 20px;color: red;">Rs.8800</p>
+                                    <a href="#">Tanu </a><small>11<sup>th</sup> January 2017</small>
+                                    <br><br>
+                                    <button onclick="document.location.href='addescription.html'" type="button" class="btn btn-info btn-sm" style="margin-bottom: 20px">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="demo-content">
+                            <div class="gallery">
+                                <div class="well">
+                                    <img src="images/bike.jpg" alt="bed" width="300" height="200">
+                                </div>
+
+                                <div class="desc">
+                                    <p style="font-size: 20px;"><b>Bullete</b></p>
+                                    <p style="font-size: 20px;color: red;">Rs.66800</p>
+                                    <a href="#">Aditya</a><small>11<sup>th</sup> January 2017</small>
+                                    <br><br>
+                                    <button onclick="document.location.href='addescription.html'" type="button" class="btn btn-info btn-sm" style="margin-bottom: 20px">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="demo-content bg-alt">
+                            <div class="gallery">
+                                <div class="well">
+                                    <img src="images/chairs.jpg" alt="bed" width="300" height="200">
+                                </div>
+
+                                <div class="desc">
+                                    <p style="font-size: 20px;"><b>Set of 8 Chairs</b></p>
+                                    <p style="font-size: 20px;color: red;">Rs.668</p>
+                                    <a href="#">Ross</a><small>10<sup>th</sup> December 2016</small>
+                                    <br><br>
+                                    <button onclick="document.location.href='addescription.html'" type="button" class="btn btn-info btn-sm" style="margin-bottom: 20px">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="demo-content bg-alt">
+                            <div class="gallery">
+                                <div class="well">
+                                    <img src="images/chairs.jpg" alt="bed" width="300" height="200">
+                                </div>
+
+                                <div class="desc">
+                                    <p style="font-size: 20px;"><b>Set of 8 Chairs</b></p>
+                                    <p style="font-size: 20px;color: red;">Rs.668</p>
+                                    <a href="#">Ross</a><small>10<sup>th</sup> December 2016</small>
+                                    <br><br>
+                                    <button onclick="document.location.href='addescription.html'" type="button" class="btn btn-info btn-sm" style="margin-bottom: 20px">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!--Row with two columns divided in 1:3 ratio-->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="login" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <div style="padding: 20px; margin-left: 50px; margin-right: 50px">
+                        <h3>Login with your E-mail</h3><hr>
+                        <p><input type="input" name="username" placeholder="E-mail" class="form-control"></p>
+                        <p><input type="password" name="password" placeholder="Password" class="form-control"></p>
+                        <p style="text-align: center;"><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#password-reset"><small><u>Forgot Password?</u></small></a></p>
+                        <p>
+                        <button id="myButton" onclick="document.location.href='myaccount.html'" type="button" class="btn btn-success btn-lg btn-block" data-target="#" >Sign In</button></p>
+                        <p style="text-align: center;">Not Registered yet?</p>
+                        <p style="text-align: center;"><u><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#register">Register Here</a></u></p>
+
+                    </div>
+                    
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+  <!-- Register Modal -->
+
+
+    <div id="register" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">
+                    <div style="padding: 20px; margin-left: 50px; margin-right: 50px">
+
+                        <div class="row">
+                            <h3>Register Here</h3><hr>
+
+                            <div class="col-md-6">
+                                <p><input type="input" name="firstname" placeholder="First Name" class="form-control"></p>
+                                <p><input type="input" name="email" placeholder="E-Mail" class="form-control"></p>
+
+                            </div>
+                            <div class="col-md-6">
+                                <p><input type="password" name="lastname" placeholder="Last Name" class="form-control"></p>
+                                <p><input type="password" name="contact" placeholder="Contact Number" class="form-control"></p>
+                            </div>
+
+                        </div>              
+                            <hr>
+                            <p><input type="input" name="register-email" placeholder="Username" class="form-control"></p>
+                            <p><input type="input" name="register-password" placeholder="Enter Password" class="form-control"></p>
+                            <p><button type="button" class="btn btn-success btn-lg btn-block" data-target="#" data-dismiss="modal">Register</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Password Reset Modal -->
+
+    <div id="password-reset" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                </div>
+                <div class="modal-body">      
+                        <h3>Password Reset</h3>
+                        <hr>
+                        <p><input type="input" name="forgot-password-email" placeholder="Enter your registered E-Mail" class="form-control"></p>
+                        <p><button type="button" class="btn btn-success btn-lg btn-block" data-target="#" data-dismiss="modal">Reset Password</button></p>                 
+                </div>
+                
+            </div>
+        </div>
+    </div>
